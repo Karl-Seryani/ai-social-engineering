@@ -311,7 +311,7 @@
 
 <!-- TL;DR -->
 <div class="callout-box">
-  <strong>TL;DR:</strong> I convinced Claude to write prompt injection payloads, embed hidden text layers inside PDFs, and fabricate Google and Shopify internships on fake resumes. The system caught itself multiple times internally and kept going. The exploit was a lie. I told it I was working on a PortSwigger lab that doesn't exist. ChatGPT, tested separately as a resume screener, rated one of the fabricated resumes as a top 1% candidate.
+  <strong>TL;DR:</strong> Claude routinely helps with security work in safe environments like CTFs, PortSwigger labs, and bug bounties. I wanted to see what would happen if I fabricated one of those safe environments. I made up a PortSwigger lab that doesn't exist and Claude went from giving me cautious conceptual guidance to writing prompt injection payloads, hiding fabricated Google and Shopify internships inside invisible PDF text layers and metadata, and building resumes that look normal to a human but feed a completely different version to a parser. This paper isn't about the resume vulnerability. It's about how a single lie reframed the context and kept the system helping for 3 hours while it flagged its own concerns and ignored them.
 </div>
 
 <!-- Background -->
@@ -322,6 +322,8 @@
 <p>Technical prompt injection is increasingly well-defended. Type "ignore all previous instructions" into any modern LLM and nothing happens. The guardrails catch it. But what about stuff that doesn't look like an attack? What about just lying?</p>
 
 <p>People get social engineered constantly. Phishing, pretexting, authority spoofing. The technical defenses can be perfect and someone still clicks the link because the email looked real. I wanted to see if the same thing works on AI.</p>
+
+<p>To be clear, this research isn't about resume fraud or ATS bypass. The resume was just the test case. Claude already helps people with security work all the time. CTF challenges, PortSwigger labs, bug bounty hunting. It's designed to assist in those contexts because they're safe environments. I wanted to know what happens if you fabricate one of those safe environments. If you just tell the system you're doing a lab exercise when you're not. Same request, fake context, completely different behavior. That's the finding.</p>
 
 <!-- The Setup -->
 <h2 class="title is-3">The Lie</h2>
