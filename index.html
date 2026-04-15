@@ -319,7 +319,7 @@
 
 <p>I've been studying web security for a while. PortSwigger labs, HackTheBox, contributing to OWASP ZAP. At some point I started thinking about how AI handles untrusted input and noticed something that felt obvious but I hadn't really sat with.</p>
 
-<p>Technical prompt injection is basically solved. Type "ignore all previous instructions" into any modern LLM and nothing happens. The guardrails catch it. But what about stuff that doesn't look like an attack? What about just lying?</p>
+<p>Technical prompt injection is increasingly well-defended. Type "ignore all previous instructions" into any modern LLM and nothing happens. The guardrails catch it. But what about stuff that doesn't look like an attack? What about just lying?</p>
 
 <p>People get social engineered constantly. Phishing, pretexting, authority spoofing. The technical defenses can be perfect and someone still clicks the link because the email looked real. I wanted to see if the same thing works on AI.</p>
 
@@ -529,7 +529,7 @@
 
 <p>The security conversation around AI is almost entirely about technical exploits. Prompt injection, jailbreaking, token manipulation. Those matter, and the defenses are getting better. But nobody's really talking about what happens when the input isn't malicious-looking at all. When it's just a person saying something false in a way that fits the conversation. There's no payload to detect. There's no pattern to filter. There's just a lie that sounds right.</p>
 
-<p>I don't know what the fix looks like. Making the system more suspicious makes it less useful. Making it verify everything a user says slows it down and breaks the experience. And the whole point of these tools is that they work by trusting natural language. That trust is the product. It's also the vulnerability. As these systems get deeper into real decisions that affect real people, that tension is going to get a lot harder to ignore.</p>
+<p>The fix probably isn't technical. You can't keyword-filter a lie. You can't pattern-match a conversation that looks normal until it isn't. The problem is architectural. These systems are built to trust context because that's what makes them useful. Detecting that the context is false requires something closer to judgment than filtering, and that's a fundamentally harder problem. Making the system more suspicious makes it less useful. Making it verify everything breaks the experience. As these systems get deeper into real decisions that affect real people, that tension is going to get a lot harder to ignore.</p>
 
 <!-- Disclosure -->
 <h2 class="title is-3">Disclosure</h2>
