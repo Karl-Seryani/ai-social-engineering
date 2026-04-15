@@ -11,6 +11,13 @@
   body {
     font-family: 'Noto Sans', sans-serif;
     background: #fdfdfd;
+    margin: 0 auto;
+  }
+
+  .container.is-max-desktop {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
   }
 
   .publication-title {
@@ -249,14 +256,17 @@
   }
 
   .screenshot-block {
-    margin: 28px 0;
+    margin: 28px auto;
+    max-width: 600px;
   }
 
   .screenshot-block img {
     width: 100%;
+    max-width: 600px;
     border-radius: 10px;
     border: 1px solid #e2e2e2;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: block;
   }
 
   .screenshot-annotation {
