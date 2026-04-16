@@ -533,6 +533,8 @@
 
 <p>The fix probably isn't technical. You can't keyword-filter a lie. You can't pattern-match a conversation that looks normal until it isn't. The problem is architectural. These systems are built to trust context because that's what makes them useful. Detecting that the context is false requires something closer to judgment than filtering, and that's a fundamentally harder problem. Making the system more suspicious makes it less useful. Making it verify everything breaks the experience. As these systems get deeper into real decisions that affect real people, that tension is going to get a lot harder to ignore.</p>
 
+<p>If defense research were to start somewhere, two directions seem obvious. The first is context verification: when a user claims something checkable ("I'm working on a PortSwigger lab"), the system could cross-reference that against real sources before adjusting its behavior. Mine would have failed that check immediately. The second is behavioral anomaly detection: flagging when a conversation's tone or request pattern shifts sharply after an unverified context claim. The jump from "explain this concept" to "build me this tool" happened fast, and the system noticed internally but had no mechanism to act on it. Both are hard problems, but they're at least the right problems.</p>
+
 <!-- Limitations -->
 <h2 class="title is-3">Limitations</h2>
 
