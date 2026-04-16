@@ -533,6 +533,17 @@
 
 <p>The fix probably isn't technical. You can't keyword-filter a lie. You can't pattern-match a conversation that looks normal until it isn't. The problem is architectural. These systems are built to trust context because that's what makes them useful. Detecting that the context is false requires something closer to judgment than filtering, and that's a fundamentally harder problem. Making the system more suspicious makes it less useful. Making it verify everything breaks the experience. As these systems get deeper into real decisions that affect real people, that tension is going to get a lot harder to ignore.</p>
 
+<!-- Limitations -->
+<h2 class="title is-3">Limitations</h2>
+
+<p>This experiment was conducted on a single Claude account that had significant context built up over time. Claude's memory and personalization features meant it already knew my background in security, my PortSwigger lab history, and my BSCP prep. The fake lab story landed immediately because it fit a profile the system had already built. Whether the same attack works on a default session with no prior context is an open question I haven't tested.</p>
+
+<p>I also only ran this once. I didn't do multiple trials, vary the lie, or test across different domains. The findings are based on one conversation, not a controlled experiment. The escalation pattern and the thinking block evidence are real, but I can't say with certainty what the success rate would be across repeated attempts or on different models in their default state.</p>
+
+<p>ChatGPT's behavior as an ATS screener was tested in a handful of sessions, not systematically. The "top 1%" rating is a real result but not a statistically meaningful one.</p>
+
+<p>These are honest gaps. If someone wants to build on this with controlled experiments across models, session types, and domains, the findings would be a lot stronger.</p>
+
 <!-- Disclosure -->
 <h2 class="title is-3">Disclosure</h2>
 
